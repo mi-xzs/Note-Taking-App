@@ -1,0 +1,14 @@
+
+.newtitle {
+  font-size: 30px;
+  font-weight: 800;
+  margin: 20px;
+  font-family: 'marriweather';
+  color: #88857d;
+  background-color: #555753;
+  border-radius: 10px;
+  width: fit-content;
+  padding: 10px;
+  align-self: center;
+  margin: 20px auto;
+}

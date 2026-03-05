@@ -1,0 +1,84 @@
+
+.form {
+  width: 90%;         
+  max-width: 1000px; 
+  background-color: #555753;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px auto;  
+  padding: 20px;
+  border-radius: 10px;
+  box-sizing: border-box; 
+}
+
+.label {
+  font-size: 23px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #88857d;
+  font-family: 'marriweather';
+}
+
+.input {
+  background-color: #323530;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 18px;
+}
+
+.input:hover {
+  outline: none;
+  box-shadow: 0 0 0 2px #88857d;
+}
+
+.input:focus {
+  outline: none;
+  background-color: #323530;
+  color: white;
+}
+
+
+.textarea {
+  background-color: #323530;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 18px;
+}
+
+.textarea:hover {
+  outline: none;
+  box-shadow: 0 0 0 2px #88857d;
+}
+
+.textarea:focus {
+  outline: none;
+  background-color: #323530;
+  color: white;
+}
+
+
+.button {
+  background-color: #323530;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 10%;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.button:hover {
+  background-color: #88857d;
+  color: white;
+}
+
+.button:focus {
+  outline: none;
+  background-color: #323530 !important;
+  color: white;
+}

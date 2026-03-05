@@ -1,6 +1,7 @@
 import type { NoteData, Tag } from "./App";
 import { NoteForm } from "./NoteForm";
 import { useNote } from "./NoteLayout";
+import  Styles  from "./Newnote.module.css";
 
 
 type EditNoteProps = {
@@ -14,7 +15,7 @@ export function EditNote({onSubmit, onAddTag, availableTags} :
   const note = useNote()
   return (
   <>
-  <h1 className="mb-4">Edit Note</h1>
+  <h1 className={Styles.newtitle}>Edit Note</h1>
   <NoteForm 
   title = {note.title}
   markdown = {note.markdown}
@@ -25,3 +26,4 @@ export function EditNote({onSubmit, onAddTag, availableTags} :
   </>
   );
 }
+

@@ -1,0 +1,127 @@
+.wrapper {
+  width: 100%;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #555753;
+  border-radius: 12px;
+  padding: 24px 28px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin: 40px;
+  border: 15px double #323530;
+}
+
+.titleBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.heading {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #323530;
+  font-family: 'Merriweather', serif;
+  margin: 0;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.badgeStack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.badge {
+  background-color: #323530;
+  color: #88857d;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-family: 'Merriweather', serif;
+  letter-spacing: 0.04em;
+  border: 1px solid #88857d44;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.badge:hover {
+  background-color: #88857d;
+  color: #323530;
+}
+
+
+.actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.button {
+  background-color: #323530;
+  color: #88857d;
+  border: 1px solid #88857d44;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-family: 'Merriweather', serif;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+  text-decoration: none;
+  white-space: nowrap;
+  font-size: 1rem;
+}
+
+.button:hover {
+  background-color: #88857d;
+  color: #1e2020;
+  border-color: #88857d;
+}
+
+.button:focus {
+  outline: 2px solid #88857d66;
+  outline-offset: 2px;
+}
+
+.deleteButton {
+  background-color: #323530;
+  color: #88857d;
+}
+
+.deleteButton:hover {
+  background-color: #88857d;
+  color: #1e2020;
+  border-color: #88857d;
+}
+
+.backButton {
+  background-color: #323530;
+  color: #88857d;
+}
+
+.backButton:hover {
+  background-color: #88857d;
+  color: #1e2020;
+  border-color: #88857d;
+}
+
+
+.markdown {
+  background-color: #555753;
+  padding: 20px;
+  border-radius: 10px;
+  color: #323530;
+  font-family: 'Merriweather', serif;
+  max-width: 95%;
+  justify-content: center;
+  margin: 10px auto;
+  font-size: 2.3rem;
+  border: 15px double #323530;
+}

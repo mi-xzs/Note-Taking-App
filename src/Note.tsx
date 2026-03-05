@@ -1,45 +1,51 @@
 import { useNote } from "./NoteLayout";
-import { Badge, Button, Col, Row, Stack } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
+import styles from "./Note.module.css";
 
 type NoteProps = {
   onDelete: (id: string) => void;
-} 
+};
 
-export function Note( { onDelete }: NoteProps) {
-  const note = useNote()
+export function Note({ onDelete }: NoteProps) {
+  const note = useNote();
   const navigate = useNavigate();
 
-  return <> 
-    <Row className="align-items-center mb-4">
-      <Col><h1>{note.title}</h1>
-        {note.tags.length >0 && (
-        <Stack gap={2} className="align-items-center h-100">
-          <span className="fs-5">{note.title}</span>
+  return (
+    <div className={styles.wrapper}>
+      <div className={styles.header}>
+        <div>
+          <h1 className={styles.heading}>{note.title}</h1>
           {note.tags.length > 0 && (
-            <Stack gap={1} direction="horizontal" className=" flex-wrap">
-              {note.tags.map(tag => (
-                <Badge key={tag.id} className="text-truncate">{tag.label}</Badge>
+            <div className={styles.badgeStack}>
+              {note.tags.map((tag) => (
+                <span key={tag.id} className={styles.badge}>
+                  {tag.label}
+                </span>
               ))}
-            </Stack>
-
+            </div>
           )}
-        </Stack>
-      )}
-      </Col>
-      <Col xs="auto">
-          <Stack gap={2} direction="horizontal">
-            <Link to={`/${note.id}/edit`}>
-              <Button variant="primary">Edit</Button>
-            </Link>
-            <Button onClick={() => { onDelete(note.id); navigate("/"); }} variant="outline-danger">Delete</Button>
-            <Link to="/">
-              <Button variant="outline-secondary">Back</Button>
-            </Link>
-          </Stack>
-        </Col>
-    </Row>
-    <ReactMarkdown>{note.markdown}</ReactMarkdown>
-  </>     
-}   
+        </div>
+
+        <div className={styles.actions}>
+          <Link to={`/${note.id}/edit`}>
+            <button className={styles.button}>Edit</button>
+          </Link>
+          <button
+            onClick={() => { onDelete(note.id); navigate("/"); }}
+            className={`${styles.button} ${styles.deleteButton}`}
+          >
+            Delete
+          </button>
+          <Link to="/">
+            <button className={`${styles.button} ${styles.backButton}`}>Back</button>
+          </Link>
+        </div>
+      </div>
+
+      <div className={styles.markdown}>
+        <ReactMarkdown>{note.markdown}</ReactMarkdown>
+      </div>
+    </div>
+  );
+}

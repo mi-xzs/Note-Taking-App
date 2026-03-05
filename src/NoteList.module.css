@@ -1,0 +1,197 @@
+/* NoteList.module.css */
+
+
+.heading {
+  margin-bottom: 1rem;
+  text-align: center;
+  background-color: #323530;
+  width: 100%;
+  padding: 1px;
+  color: white;
+  border-width: 7px;
+  border-style: solid;
+  border-color: #88857d;
+  border-style: double;
+  font-family: 'gelasio', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  letter-spacing: 4px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  margin-right: 10px;
+}
+
+.button {
+  background-color: #555753;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 10%;
+  font-size: 20px;
+}
+
+.button:hover {
+  background-color: #323530;
+  color: white;
+}
+
+.button:focus {
+  outline: none;
+  background-color: #323530 !important;
+  color: white;
+}
+
+.form {
+  background-color: #555753;
+  color: white;
+  padding: 1rem;
+  margin: 10px;
+  border-radius: 0.5rem;
+  border: 10px double #323530;
+}
+
+
+
+.label {
+  color: white;
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+  border-bottom: 3px solid #323530;
+}
+
+.input {
+  background-color: #323530;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 18px;
+}
+
+.input:hover {
+  outline: none;
+  box-shadow: 0 0 0 2px #88857d;
+}
+
+.input:focus {
+  outline: none;
+  background-color: #323530;
+  color: white;
+}
+
+.notesContainer {
+  background-color: #323530;
+  border-radius: 0.5rem;
+  padding: 10px;
+  margin: 10px;
+  min-height: 700px;
+  border: 8px double #555753;
+}
+
+.emptyMessage {
+  color: #555753;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 10rem;
+  font-size: 40px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.modal :global(.modal-content) {
+  border-radius: 10px;
+}
+
+.modalHeader :global(.btn-close) {
+  position: absolute;
+  right: 30px;
+  font-size: 13px;
+}
+
+.modalHeader {
+  background-color: #323530;
+  color: white;
+  border-bottom: 3px solid #88857d;
+  position :relative;
+}
+
+.modalTitle {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.modalBody {
+  background-color: #555753;
+  min-height: 200px;
+}
+
+.deleteButton {
+  background-color: #323530;
+  border: none;
+  padding: 3px 14px;
+  border-radius: 10px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.deleteButton:hover {
+  background-color: #88857d;
+  color: white;
+}
+
+.deleteButton:focus {
+  outline: none;
+  background-color: #88857d !important;
+  color: white;
+}
+
+.card {
+  background-color: #555753;
+  border: 10px double #323530;
+  margin: 10px;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  min-height: 150px;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+}
+
+.cardtitle {
+  color: #323530;
+}
+
+.badgeStack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.badge {
+  background-color: #323530;
+  color: #88857d;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-family: 'Merriweather', serif;
+  letter-spacing: 0.04em;
+  border: 1px solid #88857d44;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.badge:hover {
+  background-color: #88857d;
+  color: #323530;
+}
