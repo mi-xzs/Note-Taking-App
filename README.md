@@ -1,8 +1,8 @@
 # Note-Taking App
 
-A markdown note-taking app with tag-based organization and instant search. Notes are persisted locally in the browser, so no backend or sign-up is required.
+Stylised Markdown note-taking app with tag-based filtering and search. React + TypeScript + Vite
+https://vercel.com/migle-s-projects/note-taking-app/AxorQ8cj46NqB6VoZ1dsqvTXJBFA
 
-> _Add a screenshot here once deployed — e.g. `![Screenshot](./public/screenshot.png)`_
 
 ## Features
 
@@ -16,35 +16,8 @@ A markdown note-taking app with tag-based organization and instant search. Notes
 
 ## Tech stack
 
-- **React 19** + **TypeScript**
-- **Vite** for dev server and build
-- **React Router v7** for client-side routing
-- **react-bootstrap** for layout primitives
-- **react-select** (creatable) for tag input
-- **react-markdown** for rendering note bodies
-- **ESLint 9** with type-aware rules
-
-## Getting started
-
-Prerequisites: Node.js 18+ and npm.
-
-```bash
-git clone https://github.com/mi-xzs/Note-Taking-App.git
-cd Note-Taking-App
-npm install
-npm run dev
-```
-
-Open the URL printed by Vite (usually `http://localhost:5173`).
-
-## Scripts
-
-| Command           | What it does                              |
-| ----------------- | ----------------------------------------- |
-| `npm run dev`     | Start the Vite dev server with HMR        |
-| `npm run build`   | Type-check and produce a production build |
-| `npm run preview` | Serve the production build locally        |
-| `npm run lint`    | Run ESLint over the project               |
+## Tech stack
+React 19 · TypeScript · Vite
 
 ## Project structure
 
