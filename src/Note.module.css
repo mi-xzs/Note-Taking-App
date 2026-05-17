@@ -117,13 +117,14 @@
   background-color: #555753;
   padding: 28px 36px;
   border-radius: 10px;
-  color: #e8e6df;
+  color: #323530;
   font-family: 'Merriweather', serif;
   max-width: 95%;
   margin: 10px auto;
   font-size: 1.1rem;
   line-height: 1.75;
   border: 15px double #323530;
+  min-height: 60vh;
 }
 
 .markdown h1,
@@ -131,7 +132,7 @@
 .markdown h3,
 .markdown h4 {
   font-family: 'Merriweather', serif;
-  color: #f4f2eb;
+  color: #323530;
   font-weight: 700;
   line-height: 1.25;
   margin: 1.6em 0 0.5em;
@@ -154,30 +155,30 @@
 }
 
 .markdown strong {
-  color: #ffffff;
-  font-weight: 700;
+  color: #323530;
+  font-weight: 800;
 }
 
 .markdown em {
-  color: #f0eee7;
+  color: #323530;
 }
 
 .markdown a {
-  color: #c6b27a;
+  color: #323530;
   text-decoration: underline;
   text-underline-offset: 3px;
 }
 
 .markdown a:hover {
-  color: #d9c590;
+  color: #1e2020;
 }
 
 .markdown blockquote {
   margin: 1.2em 0;
   padding: 0.6em 1.1em;
-  border-left: 4px solid #88857d;
+  border-left: 4px solid #323530;
   background-color: #4a4d49;
-  color: #f4f2eb;
+  color: #323530;
   border-radius: 4px;
   font-style: italic;
 }
