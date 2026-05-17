@@ -1,6 +1,6 @@
 # Note-Taking App
 
-A markdown note-taking app with tag-based organization and search. Notes are persisted locally in the browser, so no backend or sign-up is required.
+A markdown note-taking app with tag-based organization and search - local-storage. 
 
 **Live demo:** https://note-taking-app-six-zeta.vercel.app
 
@@ -30,7 +30,7 @@ Open any note to read its rendered markdown — headings, blockquotes, lists, an
 
 ## Tech stack
 
-React 19, TypeScript, Vite. Routing with react-router. Markdown rendered via react-markdown. Styling with react-bootstrap.
+React 19, TypeScript, Vite. 
 
 ## Getting started
 
