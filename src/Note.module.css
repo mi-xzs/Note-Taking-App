@@ -115,13 +115,115 @@
 
 .markdown {
   background-color: #555753;
-  padding: 20px;
+  padding: 28px 36px;
   border-radius: 10px;
-  color: #323530;
+  color: #e8e6df;
   font-family: 'Merriweather', serif;
   max-width: 95%;
-  justify-content: center;
   margin: 10px auto;
-  font-size: 2.3rem;
+  font-size: 1.1rem;
+  line-height: 1.75;
   border: 15px double #323530;
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4 {
+  font-family: 'Merriweather', serif;
+  color: #f4f2eb;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 1.6em 0 0.5em;
+  letter-spacing: -0.01em;
+}
+
+.markdown h1 { font-size: 2.2rem; }
+.markdown h2 { font-size: 1.65rem; }
+.markdown h3 { font-size: 1.3rem; }
+.markdown h4 { font-size: 1.1rem; }
+
+.markdown h1:first-child,
+.markdown h2:first-child,
+.markdown h3:first-child {
+  margin-top: 0;
+}
+
+.markdown p {
+  margin: 0 0 1em;
+}
+
+.markdown strong {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.markdown em {
+  color: #f0eee7;
+}
+
+.markdown a {
+  color: #c6b27a;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.markdown a:hover {
+  color: #d9c590;
+}
+
+.markdown blockquote {
+  margin: 1.2em 0;
+  padding: 0.6em 1.1em;
+  border-left: 4px solid #88857d;
+  background-color: #4a4d49;
+  color: #f4f2eb;
+  border-radius: 4px;
+  font-style: italic;
+}
+
+.markdown blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+.markdown ul,
+.markdown ol {
+  margin: 0 0 1em;
+  padding-left: 1.6em;
+}
+
+.markdown li {
+  margin: 0.3em 0;
+}
+
+.markdown code {
+  font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+  background-color: #323530;
+  color: #d8d4c5;
+  padding: 0.12em 0.45em;
+  border-radius: 4px;
+  font-size: 0.92em;
+}
+
+.markdown pre {
+  background-color: #323530;
+  color: #d8d4c5;
+  padding: 1em 1.2em;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin: 1.2em 0;
+  font-size: 0.95em;
+  line-height: 1.55;
+}
+
+.markdown pre code {
+  background: none;
+  padding: 0;
+  font-size: inherit;
+}
+
+.markdown hr {
+  border: 0;
+  border-top: 1px solid #88857d55;
+  margin: 1.8em 0;
 }
