@@ -1,73 +1,62 @@
-# React + TypeScript + Vite
+# Note-Taking App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A markdown note-taking app with tag-based organization and instant search. Notes are persisted locally in the browser, so no backend or sign-up is required.
 
-Currently, two official plugins are available:
+> _Add a screenshot here once deployed — e.g. `![Screenshot](./public/screenshot.png)`_
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- Write notes in **Markdown** with live-rendered output
+- Tag notes with reusable, user-defined tags
+- Filter notes by **title** and **multiple tags** at once
+- Inline **tag management** (rename, delete) via modal
+- Edit and delete existing notes
+- **localStorage** persistence — your notes stay on refresh
+- Responsive grid layout across mobile, tablet, and desktop
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech stack
 
-## Expanding the ESLint configuration
+- **React 19** + **TypeScript**
+- **Vite** for dev server and build
+- **React Router v7** for client-side routing
+- **react-bootstrap** for layout primitives
+- **react-select** (creatable) for tag input
+- **react-markdown** for rendering note bodies
+- **ESLint 9** with type-aware rules
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Getting started
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Prerequisites: Node.js 18+ and npm.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone https://github.com/mi-xzs/Note-Taking-App.git
+cd Note-Taking-App
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Open the URL printed by Vite (usually `http://localhost:5173`).
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Scripts
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+| Command           | What it does                              |
+| ----------------- | ----------------------------------------- |
+| `npm run dev`     | Start the Vite dev server with HMR        |
+| `npm run build`   | Type-check and produce a production build |
+| `npm run preview` | Serve the production build locally        |
+| `npm run lint`    | Run ESLint over the project               |
+
+## Project structure
+
+```
+src/
+  App.tsx              Top-level routes and note/tag state
+  main.tsx             Vite entry point
+  NoteList.tsx         Home view: search, filter, grid of notes
+  NoteForm.tsx         Shared form used by New/Edit
+  NewNote.tsx          Create-note route
+  EditNote.tsx         Edit-note route
+  NoteLayout.tsx       Route layout that resolves :id -> Note
+  Note.tsx             Single-note view with rendered markdown
+  useLocalStorage.ts   Typed localStorage hook
 ```

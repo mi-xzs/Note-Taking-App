@@ -1,8 +1,22 @@
 {
   "name": "note-taking-app",
+  "description": "A React + TypeScript markdown note-taking app with tag-based filtering and localStorage persistence.",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "author": "mi-xzs",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mi-xzs/Note-Taking-App.git"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "vite",
+    "markdown",
+    "notes"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -11,12 +25,10 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.8",
-    "dom": "^0.0.3",
     "react": "^19.2.0",
     "react-bootstrap": "^2.10.10",
     "react-dom": "^19.2.0",
     "react-markdown": "^10.1.0",
-    "react-router": "^7.13.0",
     "react-router-dom": "^7.13.1",
     "react-select": "^5.10.2",
     "uuid": "^13.0.0"
