@@ -1,6 +1,6 @@
 # Note-Taking App
 
-A markdown note-taking app with tag-based organization and search - local-storage. 
+A  stylised markdown note-taking app with tag-based organization and search - local-storage. 
 
 **Live demo:** https://note-taking-app-six-zeta.vercel.app
 
