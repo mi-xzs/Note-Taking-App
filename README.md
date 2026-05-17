@@ -1,8 +1,10 @@
 # Note-Taking App
 
-Stylised Markdown note-taking app with tag-based filtering and search. React + TypeScript + Vite
-https://vercel.com/migle-s-projects/note-taking-app/AxorQ8cj46NqB6VoZ1dsqvTXJBFA
+A markdown note-taking app with tag-based organization and search. Notes are persisted locally in the browser, so no backend or sign-up is required.
 
+**Live demo:** https://note-taking-app-six-zeta.vercel.app
+
+![Notes list populated with physics notes](docs/screenshots/notes-list.png)
 
 ## Features
 
@@ -14,10 +16,43 @@ https://vercel.com/migle-s-projects/note-taking-app/AxorQ8cj46NqB6VoZ1dsqvTXJBFA
 - **localStorage** persistence — your notes stay on refresh
 - Responsive grid layout across mobile, tablet, and desktop
 
-## Tech stack
+## Screenshots
+
+### Filter by tag
+Filter the grid down to a subset of notes by selecting one or more tags.
+
+![Filtering notes by Classical Mechanics tag](docs/screenshots/notes-filter.png)
+
+### Rendered note view
+Open any note to read its rendered markdown — headings, blockquotes, lists, and inline emphasis are all styled.
+
+![A rendered note showing the Wavefunction page](docs/screenshots/note-view.png)
 
 ## Tech stack
-React 19 · TypeScript · Vite
+
+React 19, TypeScript, Vite. Routing with react-router. Markdown rendered via react-markdown. Styling with react-bootstrap.
+
+## Getting started
+
+Prerequisites: Node.js 18+ and npm.
+
+```bash
+git clone https://github.com/mi-xzs/Note-Taking-App.git
+cd Note-Taking-App
+npm install
+npm run dev
+```
+
+Open the URL printed by Vite (usually `http://localhost:5173`).
+
+## Scripts
+
+| Command           | What it does                              |
+| ----------------- | ----------------------------------------- |
+| `npm run dev`     | Start the Vite dev server with HMR        |
+| `npm run build`   | Type-check and produce a production build |
+| `npm run preview` | Serve the production build locally        |
+| `npm run lint`    | Run ESLint over the project               |
 
 ## Project structure
 
